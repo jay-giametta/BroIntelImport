@@ -2,11 +2,11 @@ Bro Intel Loader
 
 First:
 
-This script must know where the 'intel/' directory is located. By default the 'bro_intel_dir' variable in the script points to '/opt/bro/share/bro/site/intel/'. Change as needed to fit your directory structure. 
+This script must know where the `intel/` directory is located. By default the `bro_intel_dir` variable in the script points to `/opt/bro/share/bro/site/intel/`. Change as needed to fit your directory structure. 
 
 Description: 
 
-This script will import single column lists of bro intel or a single entry from command line. Individual files must contain only one data type (ex. IP Addresses). awk can be helpful to parse a single column of entries from a source file. Example:
+This script will import single column lists of bro intel or a single entry from command line. Individual files must contain only one data type (ex. IP Addresses). `awk` can be helpful to parse a single column of entries from a source file. Example:
 	
 	#This command would parse the first column ($1) from source.txt
 	#and output it to target.txt
@@ -35,11 +35,11 @@ Intel Types:
 
 Dependencies:
 
-All .intel files must have the following header, with ONLY ONE TAB separating each field:
+All `.intel` files must have the following header, with ONLY ONE TAB separating each field:
 
 	#fields indicator       indicator_type  meta.source     meta.desc
 
-The intel scripts must be loaded into bro. This is accomplished by the following commands (these are included in the '__load__.bro' files). The parent folder below must be added to the 'local.bro' to be imported (ex. '/opt/bro/spool/installed-scripts-do-not-touch/site/local.bro').
+The intel scripts must be loaded into bro. This is accomplished by the following commands (these are included in the `__load__.bro` files). The parent folder below must be added to the `local.bro` to be imported (ex. `/opt/bro/spool/installed-scripts-do-not-touch/site/local.bro`).
 	
 	----------__load__.bro (in parent folder)----------
 	@load ./intel
@@ -74,7 +74,7 @@ The following sites provide open-source intel that can be digested by this scrip
 
 Expected Output:
 
-If bro finds imported entries they will show up in an 'intel.log' file with the restof bro's outputs. The info below is an example of what to expect in that log.
+If bro finds imported entries they will show up in an `intel.log` file with the restof bro's outputs. The info below is an example of what to expect in that log.
 
 	#fields ts      uid     id.orig_h       id.orig_p       id.resp_h       id.resp_p       seen.indicator  seen.indicator_type     seen.where      seen.node       matched sources fuid    file_mime_type  file_desc
 	#types  time    string  addr    port    addr    port    string  enum    enum    string  set[enum]       set[string]     string  string  string
