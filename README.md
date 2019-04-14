@@ -78,6 +78,6 @@ If bro finds imported entries they will show up in an 'intel.log' file with the 
 
 	#fields ts      uid     id.orig_h       id.orig_p       id.resp_h       id.resp_p       seen.indicator  seen.indicator_type     seen.where      seen.node       matched sources fuid    file_mime_type  file_desc
 	#types  time    string  addr    port    addr    port    string  enum    enum    string  set[enum]       set[string]     string  string  string
-1555264884.881798       CB25Oe35ozNKb33g96      172.31.11.152   43942   107.152.104.110 80      107.152.104.110 Intel::ADDR     Conn::IN_RESP   bro     Intel::ADDR     CI Army,Alien Vault     -       -       -
-1555264900.394290       CT8HhF2g2q4ec5Tz2h      172.31.11.152   50134   172.31.0.2      53      ztl.firefoxupdata.com   Intel::DOMAIN   DNS::IN_REQUEST bro     Intel::DOMAIN   Mandiant        -       -       -
+	1555264884.881798       CB25Oe35ozNKb33g96      172.31.11.152   43942   107.152.104.110 80      107.152.104.110 Intel::ADDR     Conn::IN_RESP   bro     Intel::ADDR     CI Army,Alien Vault     -       -       -
+	1555264900.394290       CT8HhF2g2q4ec5Tz2h      172.31.11.152   50134   172.31.0.2      53      ztl.firefoxupdata.com   Intel::DOMAIN   DNS::IN_REQUEST bro     Intel::DOMAIN   Mandiant        -       -       -
 
